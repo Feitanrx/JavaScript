@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual a sua nacionalidade?</title>
+    <style>
+        body{
+            background: rgb(64, 146, 190);
+            font: 36px Arial
+        }
+        body>input{
+            width:10%;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>De onde você é?</h1>
+    <input type="text" name="país" id="país">
+    <input type="button" value="Verificar" onclick="avaliar()">
+    <div id="res1">aqui</div>
+    <p>Onde você gostaria de morar?</p>
+    <input type="text" name="país2" id="país">
+    <input type="button" value="Verificar" onclick= 'avaliar()'>
+    <div id="res2">aqui</div>
+    <p>Onde você gostaria de conhecer?</p>
+    <input type="text" name="país3" id="país">
+    <input type="button" value="Verificar" onclick= 'avaliar()'>
+    <div id="res3">aqui</div>
+
+    <script>
+
+
+function avaliar () {
+    
+var países = window.document.getElementById('país')
+//var países1 = Text(países.value)
+var res1 = window.document.getElementById('res1')
+var res2 = window.document.getElementById('res2')
+var res3 = window.document.getElementById('res3')
+
+res1.innerHTML = `<p> Deu certo! </p>`
+
+
+if (países.value === 'Brasil'){
+    
+        res1.innerHTML = `<p>Você é Brasileiro!</p>`
+    }
+
+else { 
+    res1.innerHTML = `<p>Error</p>`
+    
+}
+}
+
+
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,44 @@
+body{
+    background: rgb(72, 164, 218);
+    font: 16px Arial;
+} 
+    
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    width: 55%;
+    
+    padding: 3px;
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 3px 3px 10px black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+select{
+    width:150px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    font: normal 1.4em Arial;
+    width: 90%;
+    padding-left: 16px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
